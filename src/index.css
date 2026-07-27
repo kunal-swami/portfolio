@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap");
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* ---- Color tokens ------------------------------------------------ */
+  --color-paper: #f6f7f5;
+  --color-paper-dim: #eef0ec;
+  --color-surface: #ffffff;
+  --color-ink: #12181b;
+  --color-ink-soft: #3a4247;
+  --color-muted: #626c72;
+  --color-line: #e2e5e1;
+  --color-line-strong: #cdd2cc;
+
+  --color-accent: #1f6f5c;
+  --color-accent-soft: #e4efe9;
+  --color-indigo: #35406b;
+  --color-indigo-soft: #e7e9f1;
+  --color-gold: #b8863b;
+  --color-gold-soft: #f3e9d8;
+
+  --color-dark-bg: #0f1417;
+  --color-dark-surface: #161d21;
+  --color-dark-line: #262f33;
+  --color-dark-ink: #f2f4f2;
+  --color-dark-muted: #9aa4a8;
+
+  /* ---- Type tokens --------------------------------------------------- */
+  --font-display: "Space Grotesk", "IBM Plex Sans", sans-serif;
+  --font-body: "IBM Plex Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  /* ---- Motion --------------------------------------------------------- */
+  --ease-signature: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-line);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .dark body {
+    background-color: var(--color-dark-bg);
+    color: var(--color-dark-ink);
+  }
+
+  ::selection {
+    background-color: var(--color-accent);
+    color: var(--color-paper);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .grid-texture {
+    background-image:
+      linear-gradient(to right, var(--color-line) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--color-line) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+
+  .dark .grid-texture {
+    background-image:
+      linear-gradient(to right, var(--color-dark-line) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--color-dark-line) 1px, transparent 1px);
+  }
+}
