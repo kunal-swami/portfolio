@@ -1,17 +1,17 @@
 // ─────────────────────────────────────────────────────────
 // Core profile data. Edit this file to update the site copy.
-// Source of truth: Kunal_Swami_PM.pdf (latest resume).
+// Source of truth: Kunal_Swami_PM.pdf (APM / Product Management positioning).
 // ─────────────────────────────────────────────────────────
 
 export const profile = {
   name: "Kunal Swami",
   initials: "KS",
-  role: "Product Analyst",
+  role: "Product Builder & APM",
   headline: "Product Management | Product Strategy & Analytics",
   tagline:
-    "I turn funnel data into product decisions: what to build, what to test and what to ship.",
+    "I turn funnel insights into shipped products—driving 0-to-1 discovery, writing PRDs, running pricing & retention A/B experiments, and partnering with Design and Engineering.",
   location: "Gurgaon, India",
-  email: "kunalswamirankawat@gmail.com", // from resume; the old site used ksrankawat06@gmail.com
+  email: "kunalswamirankawat@gmail.com",
   phone: "+91 90246 85944",
   resumeUrl: "/Kunal_Swami_Resume.pdf",
   photo: {
@@ -19,34 +19,34 @@ export const profile = {
     square: "/profile-square.jpg",
   },
   social: {
-    linkedin: "https://linkedin.com/in/ksrankawat06",
-    github: "https://github.com/ksrankawat06",
+    linkedin: "https://www.linkedin.com/in/kunalswamii/",
+    github: "https://github.com/kunal-swami",
   },
   currentRole: {
-    title: "Product Analyst",
+    title: "Product Strategy & Execution",
     company: "Physics Wallah",
   },
 
-  // Professional summary, from the resume, shown where the site shows the summary.
+  // Professional summary framed for Associate Product Manager (APM) & Product roles.
   summary:
-    "Product Analyst with 2+ years of experience driving product discovery, experimentation and growth across consumer tech. Drove problem discovery and co-shaped product requirements for PW Talk's scenario-based AI roleplay redesign, while leading subscription pricing A/B experiments and retention initiatives. I translate funnel insights into feature requirements, define success metrics, and work with PMs, Design and Engineering through launch. Backed by product case studies on Ola and Zomato covering 0-to-1 strategy, RICE prioritization, experimentation and metric design.",
+    "Product Management professional with 2+ years of experience driving 0-to-1 product discovery, PRDs, experimentation, and growth initiatives across consumer tech. Drove problem discovery and co-shaped product requirements for PW Talk's scenario-based AI roleplay redesign, while leading subscription pricing A/B experiments and retention initiatives. I translate funnel insights into actionable feature requirements, define success metrics, and collaborate with PMs, Design, and Engineering through Agile sprint execution and launch. Backed by product case studies on Ola and Zomato covering 0-to-1 strategy, RICE prioritization, unit economics, and metric design.",
 
-  // About Me: kept close to the original. Only the tense and the product framing changed.
+  // About Me: reframed around Product Management, PRDs, discovery, and cross-functional execution.
   bio: [
-    "I'm a product analyst who spent the last year and a half at Physics Wallah in Gurgaon, working on the dashboards, experiments and analysis that product and leadership teams used to make weekly calls on product and revenue. Before that, I spent time at Hindustan Times turning raw audience and engagement data into decisions their editorial and marketing teams could actually act on.",
-    "My day-to-day sat at the intersection of SQL, Python and product tooling: pulling data out of internal systems, finding where users drop off, and packaging it into something a non-technical stakeholder can read in ten seconds. I care less about the tool and more about whether the number on the screen changes what someone does next.",
+    "I operate at the intersection of product strategy, user discovery, and experimentation. At Physics Wallah in Gurgaon, I partnered with Product, Design, and Engineering on PW Talk—diagnosing user friction across ~60% of AI speaking sessions, co-shaping the PRD and success metrics for our scenario-based roleplay redesign, and leading subscription pricing A/B experiments that unlocked a 5–6% revenue lift and cut churn by 10%.",
+    "Whether I'm acting as product liaison for an engineering pod, prioritizing roadmap bets with RICE, or digging into SQL and Python funnels to uncover why 68–70% of cancellations happen in the first 15 minutes, my focus is always on shipping the right product solution—from problem discovery and PRD writing all the way to go-to-market rollout.",
   ],
 
   // `suffix` is appended after the animated number, so value 5 + suffix "–6%" reads "5–6%".
   heroStats: [
-    { value: 5, suffix: "–6%", label: "revenue lift from pricing A/B test", trend: "up" },
-    { value: 10, suffix: "%", label: "reduction in subscription churn", trend: "up" },
-    { value: 50, suffix: "+", label: "core KPIs defined", trend: "flat" },
+    { value: 5, suffix: "–6%", label: "revenue lift via pricing A/B test & GTM rollout", trend: "up" },
+    { value: 10, suffix: "%", label: "churn reduction via AI roleplay PRD & redesign", trend: "up" },
+    { value: 50, suffix: "+", label: "product KPIs & roadmap metrics owned", trend: "flat" },
   ],
   aboutStats: [
-    { label: "Experience", value: "2+ yrs", note: "Product analytics & growth" },
+    { label: "Experience", value: "2+ yrs", note: "Product discovery, strategy & growth" },
     { label: "Education", value: "B.Tech, NSUT Delhi", note: "2020 – 2024" },
-    { label: "Focus", value: "Product · Experiments · Metrics", note: "Decisions from data" },
+    { label: "Focus", value: "0→1 · PRDs · Experimentation", note: "User insights to shipped product" },
   ],
 };
 
@@ -54,37 +54,37 @@ export const experience = [
   {
     id: "pw",
     company: "Physics Wallah",
-    role: "Product Analyst",
+    role: "Product Analyst (Product Strategy & Execution)",
     location: "Gurgaon",
     period: "May 2025 — Aug 2026",
     current: false,
     summary:
-      "Product discovery, experimentation and retention for PW Talk, working with the Product Manager, Design and Engineering.",
+      "Owned problem discovery, PRD co-shaping, pricing A/B experimentation, and Agile pod delivery for PW Talk alongside Product, Design, and Engineering.",
     highlights: [
-      "Product discovery and strategy: found an unmet need in Riva's open-ended speaking experience despite it taking ~60% of tracked interaction time, diagnosed an expectation gap and prioritized guided, goal-based practice.",
-      "Monetization and experimentation: designed and ran a subscription pricing A/B test (Rs 199 to Rs 249), tracked guardrail metrics and presented go-to-market rollout plans, unlocking a 5–6% revenue lift.",
-      "Product strategy and execution: partnered with the Product Manager on the scenario-based roleplay redesign, driving problem discovery through funnel analysis, co-shaping feature requirements and success metrics for the PRD, and working with Design and Engineering through launch to reduce subscription churn by 10%.",
-      "Engagement risk detection and retention: used funnel analysis to find that 68–70% of cancellations happened within 15 minutes, and defined requirements for automated next-best-action reactivation journeys to improve revenue and CLV.",
-      "Cross-functional and agile delivery: acted as product liaison for an engineering pod, managing sprint cycles, backlog grooming and user story creation against quarterly product goals.",
-      "Roadmap and execution: ran user research and competitive teardowns to find engagement gaps, defined 50+ core KPIs, and worked with engineering and stakeholders to turn data into quarterly roadmaps and feature prioritization.",
+      "Product discovery & strategy: identified an unmet need in Riva's open-ended speaking experience despite ~60% of tracked interaction time; diagnosed an expectation gap and prioritized guided, goal-based practice flows.",
+      "Monetization & experimentation: designed and executed a subscription pricing A/B test (Rs 199 vs Rs 249), tracked guardrail metrics, and presented go-to-market rollout plans—unlocking a 5–6% revenue lift.",
+      "Product strategy & PRD execution: partnered with the Product Manager on the scenario-based AI roleplay redesign—driving problem discovery through funnel analysis, co-shaping feature requirements and success metrics for the PRD, and collaborating with Design and Engineering through launch to reduce subscription churn by 10%.",
+      "Engagement risk detection & retention: isolated via funnel analysis that 68–70% of cancellations occurred within 15 minutes, and defined product requirements for automated next-best-action reactivation journeys to boost revenue and CLV.",
+      "Cross-functional & Agile delivery: acted as product liaison for an engineering pod, managing sprint cycles, backlog grooming, and user story creation to align technical execution with quarterly product goals.",
+      "Roadmap & prioritization: conducted user research and competitive teardowns to uncover engagement gaps; defined 50+ core KPIs and collaborated with engineering and stakeholders to translate insights into quarterly product roadmaps.",
     ],
-    stack: ["SQL", "Python", "Metabase", "MoEngage", "AppsFlyer", "Jira", "Figma"],
+    stack: ["PRDs", "RICE", "A/B Testing", "Jira", "Figma", "MoEngage", "AppsFlyer", "SQL", "Python", "Metabase"],
   },
   {
     id: "ht",
     company: "Hindustan Times",
-    role: "Data Analyst",
+    role: "Data Analyst (Growth & GTM)",
     location: "New Delhi",
     period: "Aug 2024 — Apr 2025",
     current: false,
     summary:
-      "Growth and go-to-market analysis, and automated reporting for cross-functional teams.",
+      "Directed go-to-market segmentation, funnel optimization, and automated analytics workflows across cross-functional product and business teams.",
     highlights: [
-      "Growth and GTM strategy: directed go-to-market targeting by analysing user segmentation and conversion funnels for 35,000+ users, finding high-performing segments that improved lead-generation efficiency by 18%.",
-      "Operational scalability: deployed automated infrastructure that removed 3 hours of daily manual work and improved data visibility across teams.",
-      "Performance analytics: built cross-functional dashboards and analysed audience segments, conversion and campaign performance to improve targeting and decisions.",
+      "Growth & GTM strategy: directed Go-to-Market targeting by analysing user segmentation and conversion funnels across 35,000+ users, identifying high-intent segments that improved lead-generation efficiency by 18%.",
+      "Operational scalability: deployed automated reporting infrastructure that eliminated 3 hours of daily manual overhead, improving cross-functional alignment and data visibility.",
+      "Performance & cohort analytics: built cross-functional dashboards and analysed audience segments, conversion funnels, and campaign performance to guide targeting and product decisions.",
     ],
-    stack: ["SQL", "Power BI", "Excel"],
+    stack: ["GTM Strategy", "Funnel Analysis", "SQL", "Power BI", "Excel"],
   },
 ];
 
@@ -96,32 +96,32 @@ export const caseStudies = [
   {
     id: "zomato-group-ordering",
     title: "Zomato Product Teardown: Improving Group Ordering",
-    type: "Case study",
+    type: "Product Case Study & PRD",
     context:
-      "Group orders on Zomato hit friction at every stage of the journey, from discovery and cart to checkout and the post-order experience.",
+      "Group orders on Zomato hit friction at every stage of the journey, from discovery and cart to checkout and post-order bill splitting.",
     metrics: [
       { value: "6", label: "opportunities RICE-prioritized" },
-      { value: "2", label: "solutions proposed" },
+      { value: "2", label: "0-to-1 features proposed" },
     ],
     contribution:
-      "Mapped the end-to-end ordering journey, prioritized six opportunities with RICE, and proposed a multi-restaurant cart and integrated bill splitting. Built an A/B testing framework and a metric hierarchy covering successful orders, cart conversion, items per cart, payment errors, cancellations and delivery guardrails.",
-    tags: ["User Journey Analysis", "RICE", "A/B Testing", "Metric Design"],
+      "Mapped the end-to-end ordering journey to diagnose group-ordering drop-offs, prioritized six product opportunities using RICE, and designed two solutions: a multi-restaurant cart and native bill splitting. Architected an A/B testing framework and metric hierarchy covering primary conversion metrics alongside payment, cancellation, and delivery TAT guardrails.",
+    tags: ["Problem Discovery", "RICE Prioritization", "Solution Design", "A/B Testing", "Metric Hierarchy"],
     links: [],
   },
   {
     id: "ola-daily-2035",
     title: "Ola Daily: 2035 Commute Product Strategy",
-    type: "0-to-1 strategy",
+    type: "0-to-1 Product Strategy",
     context:
-      "Urban two-wheeler commuters need a reliable daily commute, and past shuttle attempts like Uber Shuttle in India failed on ridership, permits and fallback.",
+      "Urban two-wheeler commuters need a reliable daily commute, and past shuttle attempts like Uber Shuttle in India failed on ridership, permits, and lack of fallback rides.",
     metrics: [
       { value: "190M", label: "addressable segment (assumption-based)" },
       { value: "Rs 38 vs Rs 56", label: "cost vs revenue per seat-trip" },
       { value: "54", label: "trips to break even" },
     ],
     contribution:
-      "Defined a monthly multimodal pass with a guaranteed shuttle seat and an automatic backup ride. Evaluated six options on cost, scalability, reliability, operational control and regulatory risk, and chose a pre-committed-demand shuttle pass. Set a north star metric (Daily On-Time Commuters) with five driver metrics, guardrails and stop rules, and a phased 2027–35 rollout starting with employer-led pilots.",
-    tags: ["Product Vision", "Competitive Analysis", "North Star Metric", "Unit Economics", "GTM"],
+      "Defined a 0-to-1 monthly multimodal pass with a guaranteed shuttle seat and automatic backup ride. Evaluated six solution options across cost, scalability, reliability, operational control, and regulatory risk to select a pre-committed-demand shuttle pass. Established North Star Metric (Daily On-Time Commuters), five driver metrics, guardrails, unit economics, and a phased 2027–35 GTM rollout starting with employer-led pilots.",
+    tags: ["0-to-1 Product Vision", "Competitive Strategy", "North Star Metric", "Unit Economics", "Go-to-Market"],
     links: [],
   },
 ];
@@ -227,23 +227,24 @@ export const skillGroups = [
   },
   {
     id: "bi",
-    title: "Data Analytics & BI Tools",
+    title: "Product & BI Tools",
     skills: [
-      "SQL",
-      "Power BI",
-      "Metabase",
+      "Jira",
+      "Figma",
       "MoEngage",
       "AppsFlyer",
+      "Power BI",
+      "Metabase",
       "Excel",
       "Google Sheets",
     ],
   },
   {
     id: "technical",
-    title: "Technical Skills",
+    title: "Data & AI Product Skills",
     skills: [
-      "Python",
       "SQL (CTEs, Window Functions, Query Optimization)",
+      "Python",
       "LLM Product Workflows",
       "Prompt Design",
       "Evaluation Metrics for AI Conversation Features",
